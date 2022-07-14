@@ -1,0 +1,55 @@
+
+.image-sakura{
+    z-index:3;
+    position: absolute;
+    width:100%;
+	top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+
+.image-main{
+    z-index:2;
+    position: absolute;
+    width:100%;
+	top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.image-blur{
+    z-index:1;
+    position: absolute;
+    width:100%;
+	top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+
+.continue-buttom{
+    z-index:4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(200%) translateX(-50%);
+
+    border-width: thin;
+    border-style: solid none;
+    
+
+    padding: 1rem 3rem;
+
+    color: rgb(202, 61, 70);
+    background: #ffffff7e;
+
+
+}
