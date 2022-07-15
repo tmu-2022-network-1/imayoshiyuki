@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap');
+
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #312E2E;
+}
+
+
+#title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
 
 .image-sakura{
     z-index:3;
@@ -34,11 +47,9 @@
 }
 
 
-
 .continue-buttom{
     z-index:4;
     position: absolute;
-    top: 50%;
     left: 50%;
     transform: translateY(200%) translateX(-50%);
 
@@ -53,3 +64,77 @@
 
 
 }
+
+a{
+    color: rgb(202, 61, 70);
+    flex-shrink: 0;
+    text-decoration: none;
+}
+
+
+
+.scroll {
+
+    display: inline-block;
+    padding-top: 70px;
+    position: relative;
+}
+.scroll::before {
+    animation: scroll 3s infinite;
+    border: solid #000;
+    border-width: 0 0 1px 1px;
+    content: "";
+    display: inline-block;
+    margin: auto;
+    position: absolute;
+    top: 80vh;
+    right: 0;
+    left: 50vw;
+    transform: rotate(-45deg) translateX(-50vw);
+    width: 20px;
+    height: 20px;
+}
+@keyframes scroll {
+    0% {
+        transform: rotate(-45deg) translate(0, 0);
+    }
+    80% {
+        transform: rotate(-45deg) translate(-30px, 30px);
+    }
+    0%, 80%, 100% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+}
+
+#content{
+    padding: 50% 10% 10% 10%;
+    margin-top: 80vh;
+    margin-bottom: 10rem;
+    
+
+}
+.charactor{
+    overflow: hidden;
+
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20rem;
+}
+
+.dammy{
+    width: 5vh;
+    height: 10vh;
+}
+
+.sticky{
+    position: sticky;
+    top: 50%;
+}
+

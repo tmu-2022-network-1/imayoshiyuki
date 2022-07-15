@@ -1,0 +1,11 @@
+.scroller {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.scroller section {
+    min-height: 100%;
+    padding: 10px;
+    scroll-snap-align: start;
+}
