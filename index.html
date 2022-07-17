@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
         <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="css/backgroud.css">
         <link href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
 
         <link rel="icon" href="images/favicon.ico" />
@@ -18,39 +19,81 @@
             <img src="images/home/main.png" class="image-main">
             <img src="images/home/mainblur.png" class="image-blur">
         </div> -->
+        <div oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;" class="background-images">
+            <!-- 押せない画像たち -->
+            <div class="scroll-sakura scroll-item">
+                <img src="images/sakura/sakura-1.png" class="left" style="width: 20vw; top:0vh;">
+                <img src="images/sakura/sakura-2.png" class="right" style="width: 30vw; top:0vh;">
+                <img src="images/sakura/sakura-3.png" class="left" style="width: 20vw; top:60vh;">
+                <img src="images/sakura/sakura-4.png" class="right" style="width: 20vw; top:80vh;">
+                <img src="images/sakura/sakura-1.png" class="right" style="width: 20vw; top:130vh;">
+                <img src="images/sakura/sakura-1.png" class="left" style="width: 20vw; top:150vh; transform: scale(-1, 1);">
+                <img src="images/sakura/sakura-3.png" class="left" style="width: 15vw; top:210vh;">
+                <img src="images/sakura/sakura-2.png" class="right" style="width: 30vw; top:200vh;">
+            </div>
+            <div class="scroll-rect scroll-item">
+                <img src="images/rect.svg" class="rect" style="width: 5vw; top:-10vh; left: 7vw;">
+                <img src="images/rect.svg" class="rect" style="width: 5vw; top:10vh; right: 10vw;">
+                <img src="images/rect.svg" class="rect" style="width: 5vw; top:140vh; left: 20vw;">
+            </div>
+            <div class="scroll-rect-small scroll-item">
+                <img src="images/rect-small.svg" class="rect" style="width: 5vw; top:40vh; right: 30vw;">
+            </div>
+            <div class="scroll-dot scroll-item">
+                <img src="images/dot/dot-1.png" class="rect" style="width: 10vw; top:10vh; left: 10vw;">
+                <img src="images/dot/dot-1.png" class="rect" style="width: 10vw; top:30vh; right: 5vw;">
+                <img src="images/dot/dot-1.png" class="rect" style="width: 10vw; top:80vh; right: 40vw;">
+            </div>
+            
+        </div>
 
-        <!-- <div class="continue-buttom">Click to Continue</div> -->
+        <img src="images/home/background.png" class="background">
 
 
-        <div id="title">タイトル</div>
+        <div id="title">
+            <img src="images/rogo.png" class="rogo">
+        </div>
 
         <div class="scroll">
         </div>
 
         <div id="content">
-            <div class="charactor  def sticky">
-                <img src="images/gray.png" class="dammy">
-                <img src="images/gray.png" class="dammy">
-                <img src="images/gray.png" class="dammy">
+            <div class="charactor  def no-alpha sticky">
+                <img src="images/syakura_def.png" class="dammy">
+                <img src="images/warabi_def.png" class="dammy">
+                <img src="images/kani-def.png" class="dammy">
+                <img src="images/same-def.png" class="dammy">
+            </div>
+            <div class="charactor  empty no-alpha  sticky">
                 <img src="images/gray.png" class="dammy">
             </div>
-            <div class="charactor  middle sticky">
-                <img src="images/gray.png" class="dammy">
-                <img src="images/gray.png" class="dammy">
-                <img src="images/gray.png" class="dammy">
+            <div class="charactor  middle no-alpha sticky">
+                <img src="images/syakura_middle.png" class="dammy">
+                <img src="images/warabi_middle.png" class="dammy">
+                <img src="images/kani-middle.png" class="dammy">
+                <img src="images/same-middle.png" class="dammy">
+            </div>
+            <div class="charactor  empty no-alpha  sticky">
                 <img src="images/gray.png" class="dammy">
             </div>
-            <div class="charactor  girl sticky">
+            <div class="charactor  mahou  sticky">
+                <img src="images/syakura_mahou.png" class="dammy">
+                <img src="images/warabi_mahou.png" class="dammy">
+                <img src="images/kani-mahou.png" class="dammy">
+                <img src="images/same-mahou.png" class="dammy">
+            </div>
+            <div class="charactor  empty no-alpha  sticky">
                 <img src="images/gray.png" class="dammy">
-                <img src="images/gray.png" class="dammy">
-                <img src="images/gray.png" class="dammy">
+            </div>
+            <div class="charactor  empty no-alpha  sticky">
                 <img src="images/gray.png" class="dammy">
             </div>
 
-            <div class="continue-buttom"><a href="charactor/charactor.html">Click to Continue</a></div>
+            <div class="continue-buttom"><a href="charactor/charactor.html"><img src="images/ui/click.svg" class="click"></a></div>
         </div>
         
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src="charactor.js"></script>
+        <script src="index.js"></script>
+        <script src="scroll.js"></script>
     </body>
 </html>

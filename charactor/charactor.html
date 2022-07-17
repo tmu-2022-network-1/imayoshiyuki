@@ -6,11 +6,34 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
         <link rel="stylesheet" href="charactor.css">
+        <link rel="stylesheet" href="../css/backgroud.css">
 
         <link rel="icon" href="../images/favicon.ico" />
         <title>魔法少女syakuchan's</title>
     </head>
     <body>
+        <div oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;" class="background-images">
+            <!-- 押せない画像たち -->
+            <div class="scroll-sakura scroll-item">
+                <img src="../images/sakura/sakura-1.png" class="left" style="width: 20vw; top:0vh;">
+                <img src="../images/sakura/sakura-2.png" class="right" style="width: 30vw; top:0vh;">
+                <img src="../images/sakura/sakura-3.png" class="left" style="width: 15vw; top:60vh;">
+                <img src="../images/sakura/sakura-1.png" class="right" style="width: 20vw; top:80vh;">
+                <img src="../images/sakura/sakura-2.png" class="right" style="width: 30vw; top:150vh;">
+                <img src="../images/sakura/sakura-1.png" class="left" style="width: 20vw; top:150vh; transform: scale(-1, 1);">
+                <img src="../images/sakura/sakura-3.png" class="left" style="width: 15vw; top:210vh;">
+            </div>
+            <div class="scroll-dot scroll-item">
+                <img src="../images/dot/dot-1.png" class="rect" style="width: 10vw; top:10vh; left: 5vw;">
+                <img src="../images/dot/dot-1.png" class="rect" style="width: 10vw; top:30vh; right: 5vw;">
+                <img src="../images/dot/dot-1.png" class="rect" style="width: 10vw; top:80vh; right: 40vw;">
+            </div>
+            
+        </div>
+
+        <img src="../images/home/background.png" class="background">
+
+
         <div id="navigation">
             <svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                 y="0px" viewBox="0 0 200 191.6" style="enable-background:new 0 0 200 191.6;" xml:space="preserve" class="icon-sakura">
@@ -30,81 +53,82 @@
             </div>
         </div>
 
-
-        <div id="titile">Charactor</div>
-        <div class="charactors">
-            <div class="charactor">
-                <div class="charactor-detail">
-                    <div class="text-centering">
-                        <div class="charactor-name">syakura</div>
-                        <div class="charactor-profile">
-                            擬態前：桜餅<br>
-                            身長：160cm<br>
-                            <br>
-                            桜餅の妖精で、妹のわらびとよく行動を共にする。<br>
-                            誰にでもやさしく接するが芯は強く、やると決めたことはもう誰にも止められない。
+        <div id="contents">
+            <div id="titile">Charactor</div>
+            <div class="charactors">
+                <div class="charactor">
+                    <div class="charactor-detail">
+                        <div class="text-centering">
+                            <div class="charactor-name">syakura</div>
+                            <div class="charactor-profile">
+                                擬態前：桜餅<br>
+                                身長：160cm<br>
+                                <br>
+                                桜餅の妖精で、妹のわらびとよく行動を共にする。<br>
+                                誰にでもやさしく接するが芯は強く、やると決めたことはもう誰にも止められない。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-container fadeup js-scroll-trigger no-alpha">
+                        <div class="charactor-image syakura">
+                            <img src="../images/charactor/syakura.png" class="image-container" id="syakura">
                         </div>
                     </div>
                 </div>
-                <div class="right-container fadeup js-scroll-trigger no-alpha">
-                    <div class="charactor-image syakura">
-                        <img src="../images/charactor/syakura.png" class="image-container" id="syakura">
+                <div class="charactor">
+                    <div class="right-container fadeup js-scroll-trigger no-alpha">
+                        <div class="charactor-image warabi">
+                            <img src="../images/charactor/warabi.png" class="image-container" id="warabi">
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="charactor">
-                <div class="right-container fadeup js-scroll-trigger no-alpha">
-                    <div class="charactor-image warabi">
-                        <img src="../images/charactor/warabi.png" class="image-container" id="warabi">
-                    </div>
-                </div>
-                <div class="charactor-detail">
-                    <div class="text-centering">
-                        <div class="charactor-name">warabi</div>
-                        <div class="charactor-profile">
-                            擬態前：わらび餅<br>
-                            身長：150cm<br>
-                            <br>
-                            わらび餅の妖精でしゃくらの妹で、内気で人見知りな性格なため姉と行動を共にすることが多い。<br>
-                            怒らせるととってもこわい。
+                    <div class="charactor-detail">
+                        <div class="text-centering">
+                            <div class="charactor-name">warabi</div>
+                            <div class="charactor-profile">
+                                擬態前：わらび餅<br>
+                                身長：150cm<br>
+                                <br>
+                                わらび餅の妖精でしゃくらの妹で、内気で人見知りな性格なため姉と行動を共にすることが多い。<br>
+                                怒らせるととってもこわい。
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="charactor">
-                <div class="charactor-detail">
-                    <div class="text-centering">
-                        <div class="charactor-name">kanichan</div>
-                        <div class="charactor-profile">
-                            擬態前：カニのぬいぐるみ<br>
-                            身長：154cm<br>
-                            <br>
-                            元気ですばしっこく、よくものを壊して怒られるが反省の態度はあまりみられない。<br>
-                            とにかく鮭茶漬けが大好き。
+                <div class="charactor">
+                    <div class="charactor-detail">
+                        <div class="text-centering">
+                            <div class="charactor-name">kanichan</div>
+                            <div class="charactor-profile">
+                                擬態前：カニのぬいぐるみ<br>
+                                身長：154cm<br>
+                                <br>
+                                元気ですばしっこく、よくものを壊して怒られるが反省の態度はあまりみられない。<br>
+                                とにかく鮭茶漬けが大好き。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-container fadeup js-scroll-trigger no-alpha">
+                        <div class="charactor-image kani">
+                            <img src="../images/charactor/kani.png" class="image-container" id="kani">
                         </div>
                     </div>
                 </div>
-                <div class="right-container fadeup js-scroll-trigger no-alpha">
-                    <div class="charactor-image kani">
-                        <img src="../images/charactor/kani.png" class="image-container" id="kani">
+                <div class="charactor">
+                    <div class="right-container fadeup js-scroll-trigger no-alpha">
+                        <div class="charactor-image same">
+                            <img src="../images/charactor/same.png" class="image-container" id="same">
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="charactor">
-                <div class="right-container fadeup js-scroll-trigger no-alpha">
-                    <div class="charactor-image same">
-                        <img src="../images/charactor/same.png" class="image-container" id="same">
-                    </div>
-                </div>
-                <div class="charactor-detail">
-                    <div class="text-centering">
-                        <div class="charactor-name">samechan</div>
-                        <div class="charactor-profile">
-                            擬態前：サメのぬいぐるみ<br>
-                            身長：162cm<br>
-                            <br>
-                            ドジでおてんばな性格だが、カニちゃんの面倒をみてあげていると本人は思っている。<br>
-                            任意の文書（思いつかない）<br>
+                    <div class="charactor-detail">
+                        <div class="text-centering">
+                            <div class="charactor-name">samechan</div>
+                            <div class="charactor-profile">
+                                擬態前：サメのぬいぐるみ<br>
+                                身長：162cm<br>
+                                <br>
+                                ドジでおてんばな性格だが、カニちゃんの面倒をみてあげていると本人は思っている。<br>
+                                任意の文書（思いつかない）<br>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -114,5 +138,6 @@
         
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="charactor.js"></script>
+        <script src="../scroll.js"></script>
     </body>
 </html>

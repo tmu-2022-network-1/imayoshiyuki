@@ -1,0 +1,47 @@
+.background{
+    z-index: -5;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.background-images{
+    position: absolute;
+    width: 100vw;
+}
+
+.scroll-item{
+    position: fixed;
+    width: 100%;
+}
+.scroll-sakura{
+    z-index: 50;
+}
+.scroll-rect{
+    z-index: -1;
+}
+.scroll-rect-small{
+    z-index: -1;
+}
+.scroll-dot{
+    z-index: -2;
+}
+
+
+.left{
+    /*　左側に配置する桜 */
+    position:absolute;
+    left: 0;
+    /* background-color:aquamarine; */
+}
+.right{
+    /*　右側に配置する桜 */
+    position:absolute;
+    right: 5vw;
+    /* background-color:aquamarine; */
+}
+.rect{
+    position:absolute;
+}

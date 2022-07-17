@@ -1,0 +1,8 @@
+.text{
+    position: relative;
+    padding-left: 2rem;
+    font-weight:lighter;
+    line-height: 1.8rem;
+    letter-spacing: 0.2em;
+    word-wrap: break-word;
+}

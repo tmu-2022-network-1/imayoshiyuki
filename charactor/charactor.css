@@ -2,8 +2,11 @@
 
 body{
     font-family: 'Noto Sans JP', sans-serif;
-    padding: 0 10%;
     color: #312E2E;
+}
+
+#contents{
+    padding: 0 10%;
 }
 
 #navigation{
@@ -70,6 +73,7 @@ a{
 
 
 #titile{
+    padding-left: 2rem;
     padding-top: 12rem;
     margin-bottom: 12rem;
     color: #FEC2C5;
@@ -173,7 +177,7 @@ a{
 }
 
 .fadeup.is-animated {
-    animation: fadeup 2s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+    animation: fadeup 1.5s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
 }
 
 @keyframes fadeup {
