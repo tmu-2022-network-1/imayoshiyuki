@@ -6,11 +6,13 @@ body{
 }
 
 #title{
-    position: relative;
+    position: absolute;
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
-    top: 30vh;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
     width: 30vw;
 }
 
@@ -46,7 +48,9 @@ a{
 
     display: inline-block;
     /* padding-top: 7rem; */
-    position: relative;
+    position: absolute;
+    top: 70%;
+    left: 50%;
 }
 .scroll::before {
     animation: scroll 3s infinite;
@@ -55,12 +59,8 @@ a{
     content: "";
     display: inline-block;
     margin: auto;
-    position: absolute;
-    top: 50vh;
-    right: 0;
-    left: 50vw;
     
-    transform: rotate(-45deg) translate(0, -50%);
+    transform: rotate(-45deg);
     
     width: 20px;
     height: 20px;
@@ -69,10 +69,10 @@ a{
 }
 @keyframes scroll {
     0% {
-        transform: rotate(-45deg) translate(0, -50%);
+        transform: rotate(-45deg) translate(0, -150%);
     }
     80% {
-        transform: rotate(-45deg) translate(-30px, 20px);
+        transform: rotate(-45deg) translate(-150%, 0);
     }
     0%, 80%, 100% {
         opacity: 0;

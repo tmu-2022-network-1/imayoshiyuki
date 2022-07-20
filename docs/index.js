@@ -1,75 +1,46 @@
 $(function () {
-    // aimation呼び出し
-    if ($('.def').length) {
-        defScrollAnimation();
-    }
-    if ($('.middle').length) {
-        middleScrollAnimation();
-    }
-    if ($('.mahou').length) {
-        mahouScrollAnimation();
-    }
-
-    // aimation関数
-    function defScrollAnimation() {
+    function scrollAnimation() {
         $(window).scroll(function () {
+            let defPosition = $(".def").offset().top,
+                middlePosition = $(".middle").offset().top,
+                mahouPosition = $(".mahou").offset().top,
+                scroll = $(window).scrollTop(),
+                windowHeight = $(window).height();
             $(".def").each(function () {
-                let position = $(this).offset().top,
-                    scroll = $(window).scrollTop(),
-                    windowHeight = $(window).height();
-
-                if(scroll > position - windowHeight + windowHeight*0.4) { //見える
+                if (scroll <= defPosition - windowHeight + windowHeight * 0.4) {
+                    $(this).removeClass('is-visible');
+                    $(this).addClass('no-alpha');
+                } else if (scroll <= middlePosition - windowHeight + windowHeight * 0.5) {
                     $(this).addClass('is-visible');
                     $(this).removeClass('no-alpha');
-                }else if(scroll > position - windowHeight) { //これから
+                } else {
                     $(this).removeClass('is-visible');
                     $(this).addClass('no-alpha');
                 }
             });
-        });
-    }
-    function middleScrollAnimation() {
-        $(window).scroll(function () {
-            
             $(".middle").each(function () {
-                let position = $(this).offset().top,
-                    scroll = $(window).scrollTop(),
-                    windowHeight = $(window).height();
-
-                if(scroll > position - windowHeight + windowHeight*0.5) { //見える
+                if (scroll <= middlePosition - windowHeight + windowHeight * 0.5) {
+                    $(this).removeClass('is-visible');
+                    $(this).addClass('no-alpha');
+                } else if (scroll <= mahouPosition - windowHeight + windowHeight * 0.5) {
                     $(this).addClass('is-visible');
                     $(this).removeClass('no-alpha');
-
-                    $(".def").removeClass('is-visible');
-                    $(".def").addClass('no-alpha');
-
-                }else if(scroll > position - windowHeight) { //これから
+                } else {
                     $(this).removeClass('is-visible');
                     $(this).addClass('no-alpha');
                 }
             });
-        });
-    }
-    function mahouScrollAnimation() {
-        $(window).scroll(function () {
             $(".mahou").each(function () {
-                let position = $(this).offset().top,
-                    scroll = $(window).scrollTop(),
-                    windowHeight = $(window).height();
-                
-                if(scroll > position - windowHeight + windowHeight*0.5) { //見える
-                    $(this).addClass('is-visible');
-                    $(this).removeClass('no-alpha');
-
-                    $(".middle").removeClass('is-visible');
-                    $(".middle").addClass('no-alpha');
-
-                }else if(scroll > position - windowHeight) { //これから
+                if (scroll <= mahouPosition - windowHeight + windowHeight * 0.5) {
                     $(this).removeClass('is-visible');
                     $(this).addClass('no-alpha');
+                } else { //最後なので消えないことにしてる
+                    $(this).addClass('is-visible');
+                    $(this).removeClass('no-alpha');
                 }
             });
         });
     }
+    scrollAnimation()
     $(window).trigger('scroll');
 });

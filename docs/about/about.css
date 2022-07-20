@@ -1,8 +1,44 @@
+#about{
+    padding-left: 2rem;
+    padding-top: 12rem;
+    margin-bottom: 2rem;
+    color: #FEC2C5;
+    font-weight: bold;
+    font-size: 4.5rem;
+    letter-spacing:0.5rem;
+}
 .text{
     position: relative;
+    top:3rem;
     padding-left: 2rem;
     font-weight:lighter;
     line-height: 1.8rem;
     letter-spacing: 0.2em;
     word-wrap: break-word;
+}
+
+.stamplink{
+    display: flex;
+    position: absolute;
+    right: 10vw;
+    bottom: 10rem;
+    align-items: flex-end;
+    
+}
+
+.line-same{
+    position: relative;
+    width: 10rem;
+}
+
+.line-syakura{
+    position: relative;
+    margin-right: 5px;
+    width: 8rem;
+}
+
+img{
+    position: relative;
+    width: 100%;
+    bottom: 0;
 }
