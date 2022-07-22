@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap');
+
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #312E2E;
+}
+
 #about{
     padding-left: 2rem;
     padding-top: 12rem;
