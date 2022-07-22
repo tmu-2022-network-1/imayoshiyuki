@@ -14,10 +14,6 @@ function updateScroll(event) {
         rect.style.top = `-${scroll*0.02 *windowHeight}vh`;
         rect_small.style.top = `-${scroll*0.012 *windowHeight}vh`;
     }
-
-    // 738 
-    // ここ時間あれば修正
-
   
     sakura.style.top = `-${scroll*0.05 *windowHeight}vh`;
     dot.style.top = `-${scroll*0.005 *windowHeight}vh`;
